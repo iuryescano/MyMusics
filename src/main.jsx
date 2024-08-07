@@ -1,9 +1,16 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
+import React from 'react'
+import ReactDOM from 'react-dom/client';
+import { ThemeProvider } from 'styled-components'
+
 import { Details } from './pages/Details/index'
 
-createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <Details />
-  </StrictMode>,
+import theme from './styles/theme'
+
+
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode >
+    <ThemeProvider theme={theme}>
+      <Details />
+    </ThemeProvider>
+  </React.StrictMode>,
 )
