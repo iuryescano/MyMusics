@@ -13,11 +13,13 @@ export const Container = styled.header`
     display: flex;
     justify-content: space-between;
 
-    padding: 0 80px;
+    padding: 0 60px;
+    gap: 10px;
 
     > .text {
         color: ${({ theme }) => theme.COLORS.PINK}; 
         display: flex;
+        width: 20%;
         justify-content: center;
         align-items: center;
     }
@@ -26,10 +28,13 @@ export const Container = styled.header`
         display: flex;
         justify-content: center;
         align-items: center;
+
+        height: 100%;
+        width: 55%;
     }
 
     .Search {
-        width: 600px;
+        width: 100%;
         height: 50px;
         padding: 16px 24px;
         border-radius: 10px;
