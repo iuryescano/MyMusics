@@ -33,7 +33,7 @@ export const Container = styled.header`
         width: 55%;
     }
 
-    .Search {
+    .Search { 
         width: 100%;
         height: 50px;
         padding: 16px 24px;
