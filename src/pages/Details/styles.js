@@ -15,8 +15,8 @@ export const Container = styled.div`
         justify-content: center;
         gap: 40rem;
         align-items: center;
-        padding: 0 40px; /* Ajuste conforme necessário */
-        height: 150px; /* Altura fixa para .topo */
+        padding: 80px 40px; /* Ajuste conforme necessário */
+        height: 40px; /* Altura fixa para .topo */
         width: 100%;
         font-size: 20px;
     }
@@ -29,7 +29,7 @@ export const Container = styled.div`
         padding: 5px;
         overflow-y: hidden; /* Impede que o container geral tenha overflow */
     }
-    `;
+`;
 
 export const Links = styled.ul`
     display: flex;
@@ -38,7 +38,7 @@ export const Links = styled.ul`
     justify-content: flex-start;
     align-items: center;
     overflow-y: auto;
-    width: 100%; /* Garantir que ocupa a largura total */
+    width: 50%; /* Garantir que ocupa a largura total */
     height: calc(100vh - 105px - 150px - 40px); /* Altura dinâmica subtraindo a altura de header e topo */
 
     &::-webkit-scrollbar {
@@ -46,11 +46,11 @@ export const Links = styled.ul`
         padding: 2px;
     }
     &::-webkit-scrollbar-track {
-        background: ${({ theme }) => theme.COLORS.PINK};
+        background: none;
         border-radius: 8px;
     }
     &::-webkit-scrollbar-thumb {
-        background-color: ${({ theme }) => theme.COLORS.WHITE};
+        background-color: ${({ theme }) => theme.COLORS.PINK};
         border-radius: 8px;
     }
 `;
