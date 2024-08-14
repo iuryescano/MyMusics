@@ -2,13 +2,17 @@ import { Container } from "./styles";
 import { StarRating } from '../../components/StarRating';
 
 export function Card({ title, text }) {
-    const currentRating = 4;
+    const ratingFromDB = 3;
+    const maxTextLength = 265;
+    const truncatedText = text.length > maxTextLength ? text.substring(0, maxTextLength) + '...' : text;
+
     return (
-        <Container href="https://github.com/iuryescano">
+        <Container>
             <h3>{title}</h3>
-            <StarRating rating={currentRating} />
-            <p>{text}</p>
-            
+            <StarRating rating={ratingFromDB} />
+            <div>
+                <p>{truncatedText}</p>
+            </div>
         </Container>
     );
 }

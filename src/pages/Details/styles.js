@@ -18,6 +18,7 @@ export const Container = styled.div`
         padding: 0 40px; /* Ajuste conforme necessário */
         height: 150px; /* Altura fixa para .topo */
         width: 100%;
+        font-size: 20px;
     }
 
     .content {
@@ -25,7 +26,7 @@ export const Container = styled.div`
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-        padding: 20px;
+        padding: 5px;
         overflow-y: hidden; /* Impede que o container geral tenha overflow */
     }
     `;
@@ -33,7 +34,6 @@ export const Container = styled.div`
 export const Links = styled.ul`
     display: flex;
     flex-direction: column;
-    gap: 20px;
     list-style: none;
     justify-content: flex-start;
     align-items: center;

@@ -6,7 +6,6 @@ export const Container = styled.a`
     width: 1121px;
     height: 222.85px;
     background-color: rgba(255, 133, 155, 0.05);
-    fill-opacity: 5%;
     color: ${({ theme }) => theme.COLORS.GRAY_100};
     border-radius: 16px;
     padding: 20px 30px;
@@ -20,10 +19,13 @@ export const Container = styled.a`
         margin-bottom: 10px;
     }
 
-    p {
-        color: ${({ theme }) => theme.COLORS.GRAY_100};
-    }
 
+
+        
+        p {
+        color: ${({ theme }) => theme.COLORS.GRAY_100};
+        padding: 5px;
+    }
     &:hover {
         background-color: ${({ theme }) => theme.COLORS.PINK_DARK};
     }

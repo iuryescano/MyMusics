@@ -2,14 +2,21 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  gap: 5px;
+  align-items: flex-start;
 `;
 
-export const Star = styled.div`
+export const StarList = styled.ul`
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+`;
+
+export const StarItem = styled.li`
   color: ${({ selected, theme }) => (selected ? theme.COLORS.PINK : theme.COLORS.GRAY)};
-  transition: color 0.2s;
+  margin: 0 2px;
 
   svg {
     width: 24px;
