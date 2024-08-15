@@ -29,4 +29,8 @@ export const Container = styled.a`
     &:hover {
         background-color: ${({ theme }) => theme.COLORS.PINK_DARK};
     }
+    .tags{
+        padding: 15px;
+        margin-left: -0.8rem;
+    }
 `;

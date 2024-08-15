@@ -1,5 +1,6 @@
 import { Container } from "./styles";
 import { StarRating } from '../../components/StarRating';
+import { Tag } from '../../components/Tag';
 
 export function Card({ title, text }) {
     const ratingFromDB = 3;
@@ -12,6 +13,11 @@ export function Card({ title, text }) {
             <StarRating rating={ratingFromDB} />
             <div>
                 <p>{truncatedText}</p>
+            </div>
+            <div className="tags">
+            <Tag title={"Ficção Cientifica"}/>
+            <Tag title={"Drama"}/>
+            <Tag title={"Familia"}/>
             </div>
         </Container>
     );

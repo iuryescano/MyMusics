@@ -38,7 +38,7 @@ export const Links = styled.ul`
     justify-content: flex-start;
     align-items: center;
     overflow-y: auto;
-    width: 50%; /* Garantir que ocupa a largura total */
+    width: 60%; /* Garantir que ocupa a largura total */
     height: calc(100vh - 105px - 150px - 40px); /* Altura dinâmica subtraindo a altura de header e topo */
 
     &::-webkit-scrollbar {
