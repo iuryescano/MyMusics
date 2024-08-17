@@ -5,7 +5,7 @@ export function Header(){
     return (
         <Container>
             <div className="text">
-                <h1>RocketMovies</h1>
+                <h1>MyMovies</h1>
             </div>
             <div className="Input">
                 <input type="text" placeholder="Pesquisar pelo titulo" className="Search"/>

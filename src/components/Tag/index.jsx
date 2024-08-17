@@ -1,8 +1,8 @@
 import { Container } from './styles';
 
-export function Tag({ title }) {
+export function Tag({ title, bgColor }) {
     return (
-        <Container>
+        <Container bgColor={bgColor}>
             {title}
         </Container>
     );
