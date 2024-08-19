@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Container = styled.button`
   background-color: ${({ theme }) => theme.COLORS.PINK};
   color: ${({ theme }) => theme.COLORS.BACKGROUND_800};
-  width: ${({ width }) => width || '200px'};
+  width: ${({ width }) => width || '200px'}; /* Recebe o valor de width como prop */
   height: 48px;
   border: 0;
   padding: 0 16px;
