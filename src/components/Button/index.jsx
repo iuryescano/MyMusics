@@ -1,16 +1,16 @@
 import { Container } from './styles';
 
-export function Button({ title, icon: Icon, width, bgColor, textColor, loading = false, ...rest }) {
+export function Button({ title, icon: icon, width, bgColor, textColor, loading = false, ...rest }) {
   return (
     <Container 
       type='button' 
       disabled={loading} 
       width={width} 
-      bgColor={bgColor} 
-      textColor={textColor} 
+      $bgcolor={bgColor} 
+      $textcolor={textColor} 
       {...rest}
     >
-      {Icon && <Icon size={20} />} {/* Renderiza o ícone se existir */}
+      {icon && <icon size={20} />} {/* Renderiza o ícone se existir */}
       {loading ? 'Carregando...' : title}
     </Container>
   );

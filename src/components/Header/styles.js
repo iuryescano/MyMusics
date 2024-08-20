@@ -63,9 +63,12 @@ export const Profile = styled.div`
         line-height: 24px;
         text-align: right;
 
-        span {
+        a {
             font: 14px;
             color: ${({ theme }) => theme.COLORS.GRAY_100};
+            display: flex;
+            justify-content: end;
+            margin-left: 3rem;
         }
 
         

@@ -4,7 +4,7 @@ import { Container } from './styles'
 
 export function MusicItem({ isNew, value, onClick, ...rest }) {
     return (
-        <Container isNew={isNew}>
+        <Container $isnew={isNew}>
         <input
             type="text"
             value={value}
@@ -20,5 +20,5 @@ export function MusicItem({ isNew, value, onClick, ...rest }) {
             {isNew ? <FiPlus /> : <FiX />}
         </button>
         </Container>
-    )
+  )
 }

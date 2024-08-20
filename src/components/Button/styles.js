@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const Container = styled.button`
-  background-color: ${({ bgColor, theme }) => bgColor || theme.COLORS.PINK};
-  color: ${({ textColor, theme }) => textColor || theme.COLORS.BACKGROUND_800};
+  background-color: ${({ $bgcolor, theme }) => $bgcolor || theme.COLORS.PINK};
+  color: ${({ $textcolor, theme }) => $textcolor || theme.COLORS.BACKGROUND_800};
   width: ${({ width }) => width || '200px'}; /* Recebe o valor de width como prop */
   height: 48px;
   border: 0;
