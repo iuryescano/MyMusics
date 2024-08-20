@@ -1,10 +1,10 @@
-import { Container } from './styles'
+import { Container } from './styles';
 
-export function Input({ icon: Icon, ...rest }) {
+export function Input({ icon: Icon, height, ...rest }) {
   return (
-    <Container>
+    <Container height={height}>
       {Icon && <Icon size={20} />}
-      <input {...rest} />
+      <textarea {...rest} />
     </Container>
-  )
+  );
 }
