@@ -68,7 +68,7 @@ export const Profile = styled.div`
             color: ${({ theme }) => theme.COLORS.GRAY_100};
             display: flex;
             justify-content: end;
-            margin-left: 3rem;
+            margin-left: 3.1rem;
         }
 
         
