@@ -3,6 +3,7 @@ import { FiUser,FiMail, FiLock } from 'react-icons/fi'
 import { Input } from "../../components/Input/index";
 import { Button } from "../../components/Button/index";
 import { BiArrowBack } from "react-icons/bi";
+import { Link } from "react-router-dom";
 
 
 export function SignUp() {
@@ -32,10 +33,10 @@ export function SignUp() {
 
         <Button title={"Cadastrar"} width= {"19rem"}/>
 
-        <a href="#">
+        <Link to="/">
           <BiArrowBack/>
           Voltar para o login
-        </a>
+        </Link>
         
         
       </Form>

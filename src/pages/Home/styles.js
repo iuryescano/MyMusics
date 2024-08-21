@@ -19,6 +19,7 @@ export const Container = styled.div`
         height: 40px; /* Altura fixa para .topo */
         width: 100%;
         font-size: 20px;
+
     }
 
     .content {
